@@ -1,0 +1,31 @@
+.onboarding-page {
+    background: #1E1E1E;
+    height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .onboarding-container {
+    text-align: center;
+    width: 100%;
+
+    .logo {
+      width: 1000px;
+      max-width: 80%;
+      margin-top: 7rem;
+      margin-bottom: auto;
+      animation: fadeInZoom 2s ease-in-out;
+    }
+  }
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
