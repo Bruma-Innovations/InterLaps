@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import './theme/bruma.theme.scss';
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -19,3 +20,14 @@ app-root {
   flex-direction: column;
   flex-grow: 1;
 }
+
+
+::ng-deep .mat-tab-group {
+  overflow: hidden !important;
+}
+
+::ng-deep .mat-tab-header {
+  overflow-x: hidden !important;
+}
+
+

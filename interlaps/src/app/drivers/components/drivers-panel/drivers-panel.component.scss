@@ -1,0 +1,59 @@
+
+.mat-mdc-tab-group, .mat-mdc-tab-nav-bar {
+    --mdc-tab-indicator-active-indicator-color: #30C2C2;
+    --mat-tab-header-disabled-ripple-color: rgba(0, 0, 0, 0.38);
+    --mat-tab-header-pagination-icon-color: black;
+    --mat-tab-header-inactive-label-text-color: #EBFAFA;
+    --mat-tab-header-active-label-text-color: #30C2C2;
+    --mat-tab-header-active-ripple-color: #30C2C2;
+    --mat-tab-header-inactive-ripple-color: #30C2C2;
+    --mat-tab-header-inactive-focus-label-text-color: rgba(0, 0, 0, 0.6);
+    --mat-tab-header-inactive-hover-label-text-color: rgba(0, 0, 0, 0.6);
+    --mat-tab-header-active-focus-label-text-color: #30C2C2;
+    --mat-tab-header-active-hover-label-text-color: #30C2C2;
+    --mat-tab-header-active-focus-indicator-color: #30C2C2;
+    --mat-tab-header-active-hover-indicator-color: #30C2C2;
+    
+   
+}
+.col-md-4{
+    
+
+
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // centramos si hay espacio
+  gap: 1rem;
+  padding: 1rem;
+
+  // Cada tarjeta ocupa hasta 3 columnas en filas completas
+  > app-card {
+    flex: 1 1 calc(33.333% - 1rem); // 3 columnas
+
+    // Para pantallas medianas (2 columnas)
+    @media (max-width: 900px) {
+      flex: 1 1 calc(50% - 1rem);
+    }
+
+    // Para móviles (1 columna)
+    @media (max-width: 600px) {
+      flex: 1 1 100%;
+    }
+  }
+
+  // Centra el último elemento si hay número impar
+  > app-card:nth-last-child(1):nth-child(odd) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+::ng-deep .mat-tab-group {
+  overflow: hidden !important;
+}
+
+::ng-deep .mat-tab-body-wrapper {
+  overflow: hidden !important;
+}

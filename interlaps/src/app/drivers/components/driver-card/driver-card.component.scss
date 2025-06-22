@@ -1,0 +1,80 @@
+.leader-card {
+  background: #00c4cc; // Turquesa
+  border-radius: 20px;
+  padding: 2rem;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
+
+  .card-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+  }
+
+  .text-section {
+    z-index: 2;
+    flex: 1;
+    p, h2 {
+      margin: 0;
+    }
+
+    .round-info {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    .name {
+      font-size: 2rem;
+      font-weight: bold;
+      span {
+        display: block;
+        font-weight: normal;
+      }
+    }
+
+    .team {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+
+    .points {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+  }
+
+  .image-container {
+    position: absolute;
+    top: -20px;
+    right: -30px;
+    height: 140%;
+    z-index: 1;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.4));
+    }
+  }
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
