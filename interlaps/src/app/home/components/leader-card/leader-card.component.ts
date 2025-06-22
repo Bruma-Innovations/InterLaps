@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 @Component({
   selector: 'app-leader-card',
@@ -8,10 +8,14 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './leader-card.component.scss'
 })
 export class LeaderCardComponent {
-  driverInfo:any={
-    name:'Ayrton Senna'
-    ,team: 'McLaren Honda'
-    ,wins: 5
-    ,points:333
+  @Input() driverInfo:any={
+    name:'Kimi Räikkönen '
+    ,driverCode:'RAI'
+    ,number:7
+    ,team: 'Scuderia Ferrari'
+    ,driverPhoto:'assets/svg/drivers/kimmi/kimmi.svg'
+    ,wins: 21
+    ,points:290
+    ,record:'1:14.545 s'
   }
 }
