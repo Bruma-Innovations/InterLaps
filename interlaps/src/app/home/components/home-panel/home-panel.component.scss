@@ -1,0 +1,32 @@
+.circuit{
+    width: 25rem;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    animation: fadeInZoom 2s ease-in-out;
+}
+.home-container{
+    background-color: #1E1E1E;
+    height: 100%;
+}
+
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.circuitName{
+    width: 20rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    color: #FFFFFF;
+    font-size: clamp(1rem, 2rem, 4rem);
+    animation: fadeInZoom 2s ease-in-out;
+}
+.col-md-4{
+  //width: fit-content;
+}

@@ -1,0 +1,64 @@
+.leader-card{
+    width: 15rem;
+    height: 12rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    //background: #30C2C2;
+    //background: #5FD0D0;
+    background: transparent;
+    border: 1px solid #EBFAFA;
+    border-radius: 15px;
+    animation: fadeInZoom 2s ease-in-out;
+}
+.description{
+    margin-top: 2rem;
+    color: #EBFAFA;
+    text-align: center;
+    font-size: clamp(0.5rem, 1rem, 2rem); 
+}
+.driver-name{
+    margin-top: 0.7rem;
+    color: #EBFAFA;
+    font-size: clamp(2rem, 3rem, 4rem);
+}
+.driver-number{
+    margin-top: 0.5rem;
+    color: #EBFAFA;
+    text-align: center;
+    font-size: clamp(1.5rem, 2rem, 3rem);
+}
+.team-name{
+    margin-top: 1rem;
+    color: #EBFAFA;
+    font-size: clamp(1rem, 1.5rem, 2rem); 
+}
+.driver-points{
+    margin-top: 1.5rem;
+    color: #EBFAFA;
+    font-size: clamp(1rem, 1.5rem, 2rem); 
+}
+.driver-photo{
+    margin-top: 1.9rem;
+    height: 10rem;
+    border-radius: 0 15px;
+
+}
+.driver-record{
+    margin-top: 0.5rem;
+    color: #EBFAFA;
+}
+.col-md-6{
+    width: fit-content;
+}
+@keyframes fadeInZoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
