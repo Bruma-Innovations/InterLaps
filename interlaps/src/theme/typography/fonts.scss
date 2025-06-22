@@ -1,0 +1,33 @@
+/*DM Sans Typography*/
+@font-face{
+    font-family: 'DM Sans Ligth';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/dmSans/DMSans-Light.ttf') format('opentype');
+}
+@font-face{
+    font-family: 'DM Sans Semibold';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../../assets/fonts/dmSans/DMSans-SemiBold.ttf') format('opentype');
+}
+/*Gabarito Typography*/
+@font-face{
+    font-family: 'Gabarito Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../assets/fonts/gabarito/Gabarito-Bold.ttf') format('opentype');
+}
+/*Manrope Typography*/
+@font-face{
+    font-family: 'Manrope Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../../assets/fonts/manrope/Manrope-Bold.ttf') format('opentype');
+}
+@font-face{
+    font-family: 'Manrope Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../assets/fonts/manrope/Manrope-Regular.ttf') format('opentype');
+}
