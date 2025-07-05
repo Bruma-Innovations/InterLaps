@@ -11,6 +11,7 @@
   max-width: 800px;
   min-width: 400px;
   margin: auto;
+  animation: fadeInZoom 2s ease-in-out;
 
   .card-content {
     display: flex;
